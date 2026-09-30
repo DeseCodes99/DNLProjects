@@ -1,0 +1,3 @@
+import { Check } from 'lucide-react'
+const standards=[['CLEAR COMMUNICATION','Straight answers from the first quote to the final clean-up.'],['RELIABLE WORKMANSHIP','Every joint, edge and surface is finished with care.'],['CLEAN WORKSITES','Respect for your home, site and everyone working around us.'],['SYDNEY SERVICE','Residential and commercial projects across Sydney.']]
+export default function Standard(){return <section className="standard"><p className="eyebrow dark">THE DNL STANDARD</p><h2>DONE PROPERLY.<br/>EVERY TIME.</h2><div className="standardGrid">{standards.map(([t,d])=><article key={t}><Check/><h3>{t}</h3><p>{d}</p></article>)}</div></section>}

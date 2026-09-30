@@ -1,0 +1,63 @@
+button { font: inherit; }
+footer > div { min-width: 0; }
+footer .footerEmail { overflow-wrap: anywhere; display: block; }
+@media(max-width: 420px) {
+  .nav .navCta { font-size: 9px; letter-spacing: .3px; padding: 15px 10px; }
+}
+a:focus-visible, button:focus-visible { outline: 3px solid #ad7951; outline-offset: 5px; }
+[id] { scroll-margin-top: 100px; }
+.projectImage { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; }
+.project:hover .projectImage { transform: scale(1.035); }
+.projectText p { display: flex; gap: 8px; align-items: center; }
+.workMore { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 38px; }
+.workMore p { color: #aaa; font-size: 14px; }
+.btn:hover { opacity: .85; }
+.galleryHero { padding: 36px 7vw 64px; background: #e9e6e0; }
+.galleryBack { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; margin-bottom: 64px; }
+.galleryHero h1 { font-size: clamp(44px, 7vw, 106px); line-height: .95; letter-spacing: -.055em; margin: 0; font-weight: 800; }
+.galleryHero h1 span { color: #77736c; }
+.galleryIntro { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-top: 32px; }
+.galleryIntro p { max-width: 540px; line-height: 1.7; color: #5c5954; margin: 0; }
+.galleryCount { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; white-space: nowrap; }
+.galleryCollection { padding: 40px 7vw 80px; }
+.galleryFilters { display: flex; flex-wrap: wrap; gap: 8px; }
+.galleryFilters button { border: 1px solid #cec9c0; background: transparent; padding: 12px 18px; border-radius: 24px; font-size: 12px; cursor: pointer; }
+.galleryFilters button[aria-pressed="true"] { background: #151515; color: #fff; border-color: #151515; }
+.galleryFilters button:hover { border-color: #151515; }
+.galleryResults { font-size: 12px; color: #666; margin: 24px 0 40px; }
+.galleryJob { border-top: 1px solid #cec9c0; padding-top: 28px; margin-bottom: 64px; }
+.galleryJobHeading { display: flex; align-items: center; gap: 24px; margin-bottom: 24px; }
+.galleryNumber { font-size: 35px; font-weight: 500; letter-spacing: -2px; color: #92897d; }
+.galleryJobHeading .eyebrow { margin-bottom: 8px; font-size: 9px; color: #74695c; text-transform: uppercase; }
+.galleryJobHeading h2 { margin: 0; font-size: clamp(19px, 2.5vw, 28px); font-weight: 600; letter-spacing: -.7px; }
+.galleryPhotoCount { margin-left: auto; font-size: 12px; color: #666; white-space: nowrap; }
+.galleryPhotoGrid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+.galleryPhoto { position: relative; display: block; border: 0; padding: 0; background: #dedad3; cursor: zoom-in; overflow: hidden; }
+.galleryPhoto img { display: block; width: 100%; height: 320px; object-fit: contain; transition: transform .3s; }
+.galleryPhoto:hover img { transform: scale(1.025); }
+.galleryPhotoLabel { position: absolute; bottom: 10px; right: 10px; display: flex; gap: 18px; align-items: center; background: #151515e6; color: #fff; padding: 9px 12px; font-size: 10px; }
+.galleryContact { background: #242424; color: #fff; padding: 80px 7vw; }
+.galleryContact h2 { font-size: clamp(35px,5vw,64px); letter-spacing: -2px; margin: 0 0 30px; }
+.galleryDialog { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; border: 0; padding: 64px 5vw 24px; background: #111; color: #fff; }
+.galleryDialog::backdrop { background: #111e; }
+.galleryViewer { max-width: 1200px; height: 100%; margin: auto; display: flex; flex-direction: column; }
+.galleryViewer > img { display: block; min-height: 0; flex: 1; width: 100%; object-fit: contain; }
+.galleryViewerFooter { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 20px; }
+.galleryViewerFooter strong { font-size: 15px; font-weight: 500; }
+.galleryViewerFooter p { font-size: 12px; color: #aaa; }
+.galleryViewerControls { display: flex; gap: 12px; }
+.galleryViewerControls button,.galleryClose { display: grid; place-items: center; border: 1px solid #666; color: #fff; background: #222; width: 44px; height: 44px; cursor: pointer; }
+.galleryClose { position: absolute; top: 12px; right: 5vw; }
+@media(max-width: 900px) { .galleryPhotoGrid { grid-template-columns: repeat(2,minmax(0,1fr)); } .galleryIntro { align-items: start; flex-direction: column; gap: 24px; } }
+@media(max-width: 600px) {
+  .galleryHero { padding: 28px 6vw 44px; } .galleryBack { margin-bottom: 42px; }
+  .galleryCollection { padding: 28px 6vw 40px; } .galleryFilters button { padding: 10px 13px; }
+  .galleryPhotoGrid { gap: 10px; } .galleryPhoto img { height: 220px; }
+  .galleryJobHeading { gap: 14px; flex-wrap: wrap; } .galleryJobHeading > div { flex: 1; }
+  .galleryPhotoCount { width: 100%; margin-left: 42px; }
+  .galleryNumber { font-size: 28px; } .galleryJob { margin-bottom: 44px; }
+  .workMore { align-items: start; flex-direction: column; } .galleryViewerFooter strong { font-size: 13px; }
+  .galleryContact { padding: 60px 6vw; } .galleryDialog { padding-left: 4vw; padding-right: 4vw; }
+}
+@media(max-width: 380px) { .galleryPhotoGrid { grid-template-columns: 1fr; } }
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .projectImage,.galleryPhoto img { transition: none; } }
