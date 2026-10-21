@@ -16,10 +16,16 @@ export default function App() {
     function navigate() {
       const next = window.location.hash;
       setRoute(next);
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        if (next.startsWith("#/")) window.scrollTo({ top: 0, behavior: "instant" });
-        else document.getElementById(window.location.hash.slice(1) || "top")?.scrollIntoView();
-      }));
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          if (next.startsWith("#/"))
+            window.scrollTo({ top: 0, behavior: "instant" });
+          else
+            document
+              .getElementById(window.location.hash.slice(1) || "top")
+              ?.scrollIntoView();
+        }),
+      );
     }
     window.addEventListener("hashchange", navigate);
     return () => window.removeEventListener("hashchange", navigate);
@@ -27,14 +33,20 @@ export default function App() {
   return (
     <>
       <Navbar />
-      {route === "#/contact" ? <Contact /> : route === "#/work" ? <Gallery /> : <main id="top">
-        <Hero />
-        <About />
-        <Services />
-        <Work />
-        <Standard />
-        <Quote />
-      </main>}
+      {route === "#/contact" ? (
+        <Contact />
+      ) : route === "#/work" ? (
+        <Gallery />
+      ) : (
+        <main id="top">
+          <Hero />
+          <About />
+          <Services />
+          <Work />
+          <Standard />
+          <Quote />
+        </main>
+      )}
       <Footer />
     </>
   );

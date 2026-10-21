@@ -1,2 +1,29 @@
-import { ArrowDown } from 'lucide-react'
-export default function About(){return <section className="intro" id="about"><div><p className="eyebrow dark">BUILT ON GOOD WORKMANSHIP</p><h2>FROM BARE FRAME<br/>TO PAINT-READY.</h2></div><div className="copy"><p>DNL Projects delivers professional interior lining work with close attention to joints, corners and the small details that make the finished space look right.</p><p>Whether it is new sheeting, a renovation or a damaged wall that needs repair, we keep the process clear and the site tidy.</p><a href="#services">EXPLORE OUR SERVICES <ArrowDown size={16}/></a></div></section>}
+import { ArrowDown } from "lucide-react";
+export default function About() {
+  return (
+    <section className="intro" id="about">
+      <div>
+        <p className="eyebrow dark">BUILT ON GOOD WORKMANSHIP</p>
+        <h2>
+          FROM BARE FRAME
+          <br />
+          TO PAINT-READY.
+        </h2>
+      </div>
+      <div className="copy">
+        <p>
+          DNL Projects delivers professional interior lining work with close
+          attention to joints, corners and the small details that make the
+          finished space look right.
+        </p>
+        <p>
+          Whether it is new sheeting, a renovation or a damaged wall that needs
+          repair, we keep the process clear and the site tidy.
+        </p>
+        <a href="#services">
+          EXPLORE OUR SERVICES <ArrowDown size={16} />
+        </a>
+      </div>
+    </section>
+  );
+}

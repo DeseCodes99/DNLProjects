@@ -3,6 +3,7 @@
 Recreated as a standard React + Vite project from the saved DNL Projects site content.
 
 ## Run it
+
 1. Install Node.js.
 2. Open this folder in VS Code.
 3. Open Terminal.
@@ -11,6 +12,7 @@ Recreated as a standard React + Vite project from the saved DNL Projects site co
 6. Open the localhost URL Vite shows you.
 
 ## Main files
+
 - `src/App.jsx` — website structure/content
 - `src/styles.css` — all styling
 - `src/main.jsx` — React entry point

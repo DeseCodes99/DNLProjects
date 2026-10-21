@@ -93,6 +93,7 @@ to check their inbox before retrying. No failure acknowledgement is promised:
 when the email service cannot send, it cannot reliably send an error email either.
 
 Official references:
+
 - https://www.emailjs.com/docs/rest-api/send/
 - https://www.emailjs.com/docs/user-guide/auto-reply/
 - https://www.emailjs.com/docs/tutorial/prepare-auto-reply-template/

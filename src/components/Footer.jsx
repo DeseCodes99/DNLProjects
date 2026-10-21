@@ -20,7 +20,9 @@ export default function Footer() {
       <div>
         <b>CONTACT</b>
         <a href="tel:+61450843823">0450 843 823</a>
-        <a href="mailto:dnlprojects.nsw@gmail.com" className="footerEmail">dnlprojects.nsw@gmail.com</a>
+        <a href="mailto:dnlprojects.nsw@gmail.com" className="footerEmail">
+          dnlprojects.nsw@gmail.com
+        </a>
         <a
           href="https://www.instagram.com/dnlprojects.nsw/?hl=en"
           target="_blank"
