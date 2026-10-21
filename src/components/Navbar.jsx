@@ -1,10 +1,8 @@
-import logo from "../Gallery/Logo/blueDNLlogo.png";
-
 export default function Navbar() {
   return (
     <header className="nav">
       <a className="brand" href="#top">
-        <img src={logo} alt="DNL Plastering" />
+        DNL <span>PROJECTS</span>
       </a>
       <nav>
         <a href="#services">SERVICES</a>

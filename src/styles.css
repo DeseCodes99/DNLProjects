@@ -32,11 +32,6 @@ a {
   font-weight: 900;
   letter-spacing: -1.5px;
 }
-.brand img {
-  display: block;
-  height: 58px;
-  width: auto;
-}
 .brand span {
   font-size: 11px;
   font-weight: 600;
@@ -348,6 +343,39 @@ footer a {
 .copyright {
   color: #666;
   line-height: 1.8;
+}
+.credit {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #292929;
+  padding-top: 20px;
+}
+.credit p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: none;
+  margin: 0;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.credit a {
+  display: inline;
+  margin: 0;
+  color: #f6f4ef;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  transition: color 0.2s ease;
+}
+.credit a:hover,
+.credit a:focus-visible {
+  color: #9bbcff;
 }
 @media (max-width: 800px) {
   .nav nav a:not(.navCta) {

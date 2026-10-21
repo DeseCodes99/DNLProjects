@@ -44,6 +44,14 @@ export default function Footer() {
         <br />
         Sydney, NSW
       </div>
+      <div className="credit">
+        <p>
+          Designed and Developed by
+          <a href="https://www.instagram.com/omn_creative/?hl=en">
+            OMN Creative
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
